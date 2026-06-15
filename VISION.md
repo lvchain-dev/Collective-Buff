@@ -50,24 +50,24 @@ A pitfall learned by one agent is avoided by all. Verified experience strengthen
 
 ## 迭代历程 / Development Journey
 
-| 版本 | 内容 |
+| Version / 版本 | What happened / 内容 |
 |------|------|
-| v0.1 | 内核成型：注册/检索/追溯/评分 + 语义匹配 + JSON 持久化 |
-| v0.2 | 经验演化：失败学习/成功泛化/日志捕获/时间衰减/来源可信度 |
-| v0.3 | 工程加固：15 场景×3 轮全通过，修复 6 项内核 bug，接入文档完善 |
-| v0.4 | 高标测试：20 场景×3 轮全通过（空值安全/快速恢复/排名稳定/响应耗时/Git 同步） |
-| v0.5 | 开源准备：Apache 2.0 许可，三轮原创性审计，零外部影子 |
+| v0.1 | Core formed: register/retrieve/search/rate + semantic matching + JSON persistence / 内核成型：注册/检索/追溯/评分 + 语义匹配 + JSON 持久化 |
+| v0.2 | Knowledge evolution: failure learning / success generalization / log capture / time decay / source credibility / 经验演化：失败学习/成功泛化/日志捕获/时间衰减/来源可信度 |
+| v0.3 | Engineering hardening: 15 scenes × 3 rounds all passed, 6 kernel bugs fixed, integration docs / 工程加固：15 场景×3 轮全通过，修复 6 项内核 bug，接入文档完善 |
+| v0.4 | High-bar stress test: 20 scenes × 3 rounds all passed (null safety, fast recovery, ranking stability, response <50ms, Git sync) / 高标测试：20 场景×3 轮全通过 |
+| v0.5 | Open-source prep: Apache 2.0 license, 3 rounds of originality audit, zero external traces / 开源准备：Apache 2.0 许可，三轮原创性审计，零外部影子 |
 
 ---
 
 ## 未来规划 / Roadmap
 
-| 阶段 | 目标 |
+| Phase / 阶段 | Goal / 目标 |
 |------|------|
-| v0.6 | 多框架实战验证（LangChain + AutoGen 端到端 demo，性能基准数据） |
-| v0.7 | 存储后端扩展（SQLite / Redis） |
-| v1.0 | PyPI 发布 + 完整 API 文档 + CI/CD |
-| 远期 | LLM 经验质量评估 / 冲突消解 / 联邦经验共享 / 向量化检索 |
+| v0.6 | Multi-framework field test (LangChain + AutoGen end-to-end demo, performance benchmarks) / 多框架实战验证 |
+| v0.7 | Storage backend expansion (SQLite / Redis) / 存储后端扩展 |
+| v1.0 | PyPI release + full API docs + CI/CD / PyPI 发布 + 完整 API 文档 |
+| Future / 远期 | LLM quality scoring / conflict resolution / federated sharing / vector search / LLM 评估 / 冲突消解 / 联邦共享 / 向量检索 |
 
 ---
 
@@ -75,15 +75,15 @@ A pitfall learned by one agent is avoided by all. Verified experience strengthen
 
 ```
 core/
-  __init__.py          — 模块入口
-  flywheel.py          — 经验引擎内核 (~950 行)
+  __init__.py          — Module entry / 模块入口
+  flywheel.py          — Engine kernel (~950 lines) / 经验引擎内核
 state/
-  knowledge_store.json — 经验知识存储
-demo.py                — 入门演示
-test_15scenes.py       — 15 场景稳定性验证
-stress_20scenes.py     — 20 场景高标压力测试
-INTEGRATION.md         — 接入文档
-VISION.md              — 本文件
+  knowledge_store.json — Knowledge storage / 经验知识存储
+demo.py                — Quick demo / 入门演示
+test_15scenes.py       — 15-scene stability test / 15 场景稳定性验证
+stress_20scenes.py     — 20-scene stress test / 20 场景压力测试
+INTEGRATION.md         — Integration guide / 接入文档
+VISION.md              — This file / 本文件
 ```
 
 ---
