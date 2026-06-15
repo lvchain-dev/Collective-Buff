@@ -2,6 +2,9 @@
 
 > 自进化式任务执行知识库。为多 Agent 框架提供知识的自动积累、检索与复用能力。
 > A self-evolving knowledge base for task execution. Auto-accumulates, retrieves, and reuses knowledge across multi-agent frameworks.
+>
+> **稳定运行近一个月的成熟方案。下一代优化研发中，敬请期待。**
+> **A battle-tested solution running stably for nearly a month. Next-gen optimization in the works. Stay tuned.**
 
 ---
 
