@@ -9,6 +9,8 @@
 
 **中文**
 
+本文分享的方案，我已在自己项目中稳定运行近一个月，经过多轮打磨验证。目前我正在着手下一步优化——让经验在多场景下的化学反应更加剧烈，敬请期待。
+
 我在开发自己的多 Agent 平台时，发现一个反复出现的痛点：Agent 总是犯同样的错误，成功的经验也无法在任务之间传递。每个任务都像第一次面对这个世界。
 
 于是我自己写了一套经验引擎来解决这个问题——让 Agent 踩过的坑自动记住，成功的经验自动泛化，经验随时间自然衰减而非永久固化。
@@ -16,6 +18,8 @@
 后来刷抖音、逛技术网站时发现，原来大家都在被同样的问题困扰。我就把这部分从自己的平台里提取出来，独立成项目，又经过几轮 bug 修复和压力测试打磨，现在放到了 GitHub 上。
 
 **English**
+
+The solution shared here has been running stably in my own project for nearly a month, refined through multiple rounds of testing. Meanwhile, I'm working on the next iteration — to make the chemical reaction of experience even more powerful across scenarios. Stay tuned.
 
 While building my own multi-agent platform, I kept hitting the same pain point: agents repeat the same mistakes, and successful experience never transfers across tasks. Every task felt like starting from scratch.
 
