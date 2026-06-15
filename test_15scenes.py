@@ -118,8 +118,8 @@ def run_one_round(engine: ExperienceEngine, round_num: int):
     results["S11"] = PASS if found == 5 else FAIL
 
     # ──── S12: 更新后停用 ────
-    rid12 = engine.register("npm install 卡住", "切换镜像源解决: npm config set registry https://registry.npmjs.org", tags=["npm", "install", "mirror"])
-    ok = engine.update(rid12, trigger_pattern="npm install 卡住或缓慢", recommendation="切换镜像源解决: npm config set registry https://registry.npmjs.org")
+    rid12 = engine.register("npm install 卡住", "切换镜像源: npm config set registry <your-mirror-url>", tags=["npm", "install", "mirror"])
+    ok = engine.update(rid12, trigger_pattern="npm install 卡住或缓慢", recommendation="切换镜像源: npm config set registry <your-mirror-url>")
     e = engine.retrieve(rid12)
     ok = ok and e and "npm install 卡住或缓慢" == e.trigger_pattern
     engine.deactivate(rid12)

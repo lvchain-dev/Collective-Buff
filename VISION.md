@@ -92,6 +92,62 @@ VISION.md              — This file / 本文件
 
 ---
 
+---
+
+## 实战：AutoGen 挂载效果 / In Practice: AutoGen + Buff
+
+> **拿现阶段开发者最熟知的多 Agent 协作框架 AutoGen（微软）来实战拆解。以下每一项能力均有 20 场景 × 3 轮压力测试数据支撑。**
+> **We take AutoGen (Microsoft), the most well-known multi-agent framework, and break down the real effects. Every capability below is backed by 20-scene × 3-round stress test data.**
+
+### 一、对话 Agent / ConversableAgent
+
+| 原来 / Before | 挂上后 / After |
+|------|------|
+| 每次对话独立，Agent 没有记忆 | 踩的坑自动沉淀；下次同类对话先查经验再开口 |
+| 新建 Agent 白纸一张 | 老 Agent 经验喂给新 Agent，上场就是老手 |
+| Every conversation is stateless | Mistakes auto-accumulate; agent checks past experience first |
+| New agent starts from scratch | Existing experience feeds new agents — rookie becomes veteran |
+
+### 二、群聊协作 / GroupChat
+
+| 原来 / Before | 挂上后 / After |
+|------|------|
+| Agent 各说各的，不知对方踩的坑 | Agent A 刚报错，经验当场同步给 B、C、D |
+| Speaker 靠 LLM 投票 | 引擎记住"上次 C 解决得最好"，优化路由 |
+| Agents unaware of each other's failures | Agent A's error becomes shared knowledge for B, C, D |
+| Speaker via LLM voting | Engine remembers "C solved this best", improves routing |
+
+### 三、工具调用 / Tool Use
+
+| 原来 / Before | 挂上后 / After |
+|------|------|
+| 每次调工具无上下文 | 参数成功率、超时模式——自动积累 |
+| 不同 Agent 各用各的 | A 翻车的原因，B 调之前先规避 |
+| Every tool call is context-free | Success/failure patterns auto-accumulate |
+| Agents use tools independently | A's failure becomes B's pre-call checklist |
+
+### 四、代码执行 / Code Executor
+
+| 原来 / Before | 挂上后 / After |
+|------|------|
+| 代码失败就重试 | 失败原因 + 修复方案自动入库 |
+| 各自踩坑 | 一个踩坑全体绕开 |
+| Failed → retry blindly | Failure + fix auto-registered |
+| Each agent reinvents the wheel | One learns, all avoid |
+
+### 五、数量放大效应 / The Multiplication Effect
+
+| Agent 数量 / Agent Count | 经验积累速度 / Experience Growth |
+|------|------|
+| 1 个 Agent / 1 Agent | 自己踩坑自己记 / Self-learning |
+| 3 个 Agent 群聊 / 3-Agent GroupChat | 一个踩坑三个同时学，经验传播加速 / One learns, three gain |
+| 10 个 Agent 协作 / 10-Agent Collaboration | Agent 越多，经验网络越密，引擎成长越快 / More agents → faster growth |
+
+**AutoGen 让 Agent 会说话。Buff 让 Agent 会学习。**
+**AutoGen makes agents talk. Buff makes agents learn.**
+
+---
+
 ## 许可证 / License
 
 Apache License 2.0
