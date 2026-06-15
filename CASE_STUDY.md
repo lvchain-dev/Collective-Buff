@@ -1,5 +1,3 @@
----
-
 ## 实战：AutoGen 挂载效果 / In Practice: AutoGen + Buff
 
 > **拿现阶段开发者最熟知的多 Agent 协作框架 AutoGen（微软）来实战拆解。以下每一项能力均有 20 场景 × 3 轮压力测试数据支撑。**
@@ -67,4 +65,4 @@ AutoGen has four core modules. Here is what changes when you mount Buff:
 
 **AutoGen 让 Agent 会说话。Buff 让 Agent 会学习。**
 **AutoGen makes agents talk. Buff makes agents learn.**
-*（内容由AI生成，仅供参考）*
+
