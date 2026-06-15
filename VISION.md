@@ -71,7 +71,7 @@ A pitfall learned by one agent is avoided by all. Verified experience strengthen
 | v0.6 | Multi-framework field test (LangChain + AutoGen end-to-end demo, performance benchmarks) / 多框架实战验证 |
 | v0.7 | Storage backend expansion (SQLite / Redis) / 存储后端扩展 |
 | v1.0 | PyPI release + full API docs + CI/CD / PyPI 发布 + 完整 API 文档 |
-| Future / 远期 | LLM quality scoring / conflict resolution / federated sharing / vector search / LLM 评估 / 冲突消解 / 联邦共享 / 向量检索 |
+| Future / 远期 | Deeper optimization in progress — details to be announced / 更深层优化研发中，细节待公布 |
 
 ---
 
